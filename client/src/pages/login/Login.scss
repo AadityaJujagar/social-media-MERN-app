@@ -1,0 +1,104 @@
+.login {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //
+  text-decoration: none;
+  cursor: default;
+
+  .card {
+    min-height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    //
+    overflow: hidden;
+
+    .leftSec {
+      padding: 50px;
+      color: white;
+      display: flex;
+      flex: 1; // same width as right sec
+      flex-direction: column;
+      gap: 30px;
+      //
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
+          center;
+      background-size: cover;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: azure;
+        color: rebeccapurple;
+        //
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        //
+        &:hover {
+          background-color: antiquewhite;
+        }
+      }
+    }
+    .rightSec {
+      padding: 50px;
+      display: flex;
+      flex: 1; // same width as left sec
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+          //
+          outline: none;
+          //
+          &:hover {
+            border-bottom: 1px solid #555;
+          }
+          //
+          &:focus {
+            border-bottom: 2px solid gray;
+          }
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          color: white;
+          background-color: #7570de;
+          //
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          //
+          &:hover {
+            background-color: #6460bc;
+          }
+        }
+      }
+    }
+  }
+}
